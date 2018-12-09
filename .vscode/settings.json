@@ -1,0 +1,23 @@
+{
+    "files.autoSave": "afterDelay",
+    "editor.fontSize": 22,
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "600", // Bold
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorStyle": "block",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Monokai Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "php.validate.executablePath": "C:\\MAMP\\bin\\php\\php7.2.1\\php.exe",
+    "php.validate.run": "onType",
+    "php.suggest.basic": false,
+    "php.validate.enable": true,
+    "bracketPairColorizer.forceUniqueOpeningColor": true,
+    "bracketPairColorizer.highlightActiveScope": true,
+    "editor.matchBrackets": false,
+    "phpfmt.php_bin": "C:\\MAMP\\bin\\php\\php7.2.1\\php.exe",
+    "editor.lineHeight": 40,
+}

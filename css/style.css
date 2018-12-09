@@ -1,0 +1,235 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: " Helvetica", sans-serif;
+  background-color: rgb(19, 18, 18);
+}
+
+.crud__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 960px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #131212;
+  filter: drop-shadow(0px 25px 25px #000);
+}
+
+.crud__title {
+  width: 400px;
+  margin-top: 2rem;
+  color: #fff;
+  background-image: linear-gradient(to left, #d8ab46, #e0a336, #e99b27, #f39118, #fd8509);
+  text-align: center;
+  padding: .1rem;
+}
+
+.crud__title.read {
+  width: 900px;
+}
+
+.crud__create-read-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.6); /*Fallback*/
+  height: 300px;
+  filter: drop-shadow(0px 25px 25px #000);
+}
+
+.crud__create-read-box h3 {
+  color: #767474;
+  text-transform: capitalize;
+  letter-spacing: 2;
+  margin: 2rem 0;
+
+}
+
+.crud__user-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 2rem;
+}
+
+.crud__user-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.crud__links {
+  width: 300px;
+  text-decoration: none;
+  color: #FD8509;
+  background: transparent;
+  padding: .5rem 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #FD8509;
+  transition: all .3s ease-in-out, color 0.2s 0.3s;
+}
+
+.crud__links.users {
+  border: 1px solid #FFE05D;
+  color: #D8AB46;
+}
+
+.crud__links:hover {
+  background: #FD8509;
+  color: #000;
+}
+.crud__links.users:hover {
+  background: #FFE05D;
+  color: #000;
+}
+
+.crud__links:last-child {
+  margin-top: 1.5rem;
+}
+
+/*Create.php*/
+.crud__grid {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  background: rgb(0, 0, 0);
+  min-width: 400px;
+  min-height: 75vh;
+}
+
+form label {
+  padding: 0.8rem 0;
+  justify-self: flex-start;
+  color: #D8AB46;
+}
+
+
+form input {
+  height: 30px;
+  outline-color: #FD8509;
+  font-size: 1.2rem;
+  color: #FD8509;
+  background: #222121;
+  border: none;
+  padding: .5rem;
+}
+
+form button {
+  align-self: center;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1rem;
+  color: #FD8509;
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid #FD8509;
+  margin: 2rem 0;
+  transition: all .3s ease-in-out, color 0.2s 0.3s;
+  cursor: pointer;
+  outline: none;
+}
+
+form button:hover {
+  background: #FD8509;
+  color: #000;
+}
+.crud__icon-wrap{
+  display: flex;
+  justify-content: center;
+}
+
+.crud__icon-wrap.read {
+  display: flex;
+  justify-content: center;
+  background: #000;
+  border: 2px solid  #353434;
+  border-top: none;
+}
+
+.crud__icon.home:hover,.crud__icon.create:hover,.crud__icon.database:hover,.crud__icon.user:hover   {
+  border-radius: 50%;
+  background: #ffb301;
+}
+
+.crud__icon {
+  display: inline-block;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+.crud__icon:nth-child(2) {
+  margin: 0 1rem;
+  margin-top: 1rem;
+}
+
+.crud__icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Read.php */
+.crud__users-database {
+  background: #353434;
+  color: #767474;
+  min-width: 900px;
+}
+
+.crud__users-database tbody {
+  background: #000000;
+}
+
+.crud__users-database th {
+  color: #D8AB46;
+  padding: .2rem 0;
+}
+
+.crud__users-database td {
+  text-align: center;
+  padding: .5rem 0;
+  /* background: #0142A6; */
+}
+
+.crud__users-database td .crud__update-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: .1rem 2rem;
+  /* background: #FD8509; */
+  border-radius: 4px;
+  border: 1px solid #FD8509;
+  transition: all .4s ease-in-out, color 0.1s 0.3s;
+}
+.crud__users-database td .crud__update-btn:hover {
+  background: #FD8509;
+}
+
+.crud__users-database td .crud__delete-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: .1rem 2rem;
+  border-radius: 4px;
+  border: 1px solid rgb(233, 26, 26);
+  transition: all .4s ease-in-out, color 0.1s 0.3s;
+}
+.crud__users-database td .crud__delete-btn:hover {
+  background: rgb(233, 26, 26);
+}

@@ -15,7 +15,7 @@ if ($_GET["show"] == "all") {
 }
 // Show user who was just created
 if ($_GET["show"] == "one" && isset($_GET["id"])) {
-    $id= $_GET["id"];
+    $id = $_GET["id"];
     try {
         $statement = $pdo->prepare(
             "SELECT * FROM users where id = :id;"
@@ -56,7 +56,7 @@ if ($_GET["show"] == "one" && isset($_GET["id"])) {
                   <th>Delete</th>
                 </tr>
                 <?php
-                   foreach ($results as $user) {?>
+foreach ($results as $user) {?>
                 <tr>
                   <td>
                     <?php echo $user->id; ?>

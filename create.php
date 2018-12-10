@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
       "INSERT INTO users (first_name, last_name, age) VALUES (:first_name, :last_name, :age);"
     );
     $statement->execute(["first_name" => $first_name, "last_name" => $last_name, "age" => $age]);
-    echo "<script >console.log('Success!User created')</script>";
+    echo "<script>console.log('Success User created')</script>";
 
     $id = $pdo->lastInsertId();
 
